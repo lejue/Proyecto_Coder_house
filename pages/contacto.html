@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/stilos.css">
+  <link rel="stylesheet" href="../css/estilos.css">  
+</head>
+<body>
+  <nav class="navbar bg-dark navbar-dark">
+    <a class="navbar-brand" href="../index.html"><img id="icon-ir" src="../images/icon-ir.jpeg" alt="Icon Inter Red"></a>
+    <h1 class="title"><a href="../index.html">Inter Red</a></h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/tarifas.html">Planes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/zcoberturas.html">Zonas de Coberturas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/pFrecuentes.html">Preguntas Frecuentes</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+        </li>    
+      </ul>
+    </div>  
+  </nav>
+  <br>
+    <section class="container form" id="contacto">   
+        <!--Formulario de Contacto con envio de texto plano-->   
+        <div class="container" id="contacto">
+            <h2 class="form-contact subtitulo">Formulario de Contacto</h2>
+            <form action="mailto:inter_red@hotmail.com" method="post" class="">
+                <div class=" form-group">
+                    <label for="names">Nombres *</label><br>
+                    <input type="text" id="names" name="nombre" required placeholder="Inter Red" class="form-control"><br>
+                    <label for="provincia">Provincia*</label><br>
+                    <select name="provincia" required class="form-control">
+                    <option>Santiago del Estero</option>
+                    </select><br>
+                    <label for="localidades">Localidades*</label><br>
+                    <select name="Localidades" required class="form-control">
+                        <optgroup label="Dpto Choya">
+                            <option>Choya</option>
+                            <option>Villa la Punta</option>
+                            <option>Sol de Mayo</option>
+                            <option>Frias</option>
+                        </optgroup>
+                    </select><br>                 
+                    <label for="phone">Telefono / Celular*</label><br>
+                    <input type="text" id="phone" name="telefono" placeholder="385-537-4835" required class="form-control"><br>
+                    <label for="email">Correo electronico *</label><br>
+                    <input type="text" id="email" name="correo" required placeholder="mail@mail.com" class="form-control"><br>
+                    <label for="mensaje">Mensaje *</label><br>
+                    <textarea id="mensaje" name="mensaje" required rows="5" cols="30" placeholder="Escriba su mensaje..." class="form-control"></textarea><br>
+                    <input type="submit" value="Enviar" id="enviar" class="btn btn-success">
+                    <input type="reset" id="reset" name="Resetear" class="btn btn-danger"><br><br> 
+                    <div class="container">
+                        <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#termCond">Terminos y Condiciones</button>
+                        <div id="termCond" class="collapse">
+                            <h2>TERMINOS Y CONDICIONES</h2>
+                            <h4 class="terCond">INTER RED:</h4> 
+                            <p class="lead terCond">prestara al cliente un servicio de acceso a internet. Los abonos se cobran por adelantado en forma automática de acuerdo a la tarifa y/o plan seleccionado por el cliente. Los vencimientos de las facturas ocurren los días 10 de cada mes o día hábil subsiguiente. Luego de 5 dias en caso de incumplimiento se procederá a la suspensión del servicio. A los cual a si pasado los 30 dias sin regularizar la deuda se procederá a la baja y retiro de equipos. 
+                            Los equipos electrónicos y de erradicación instalados en el domicilio del cliente se entregan en calidad comodato, debiendo ser restituidos en perfecto estado de funcionamiento al finalizar el contrato. El valor de los mismos se pauta en USD $100 (dólar). El importe cobrado como “cargo de instalación” se refiere a los costos de mano de obra, alta del servicio y a los materiales e insumos no recuperables al momento de la baja, y no es reembolsable.
+                            <strong>INTER – RED:</strong> No se hace responsable por daños y perjuicios de cualquier índole, directos o indirectos o lucros cesantes, que el cliente o terceros puedan sufrir debido a interrupciones o deficiencias del servicio cualquiera sea su causa.<strong> INTER-RED:</strong> no garantiza ni se responsabiliza por el resultado obtenido a través del uso específico que realice el cliente. Contenido o naturaleza de la información de la red. El servicio prestado asume un uso individual y razonable de los recursos de CPU, ancho de banda y tiempos de conexión en los nodos de <strong> INTER – RED.</strong> Reservándose así el derecho de suspensión y/o terminación del servicio en caso de uso indebido o cese de pago del mismo. De acuerdo a las normas administrativas de <strong> INTER – RED.</strong> Duración del contrato 12 meses renovable automáticamente. En el transcurso del mismo se pueden realizar ampliaciones, de acuerdo a las necesidades que surjan en cuanto al tráfico o ancho de banda. Como los costos del servicio están condicionado por el valor del dólar y demás efectos de los índices de inflación los montos de los abonos podrán ser modificados periódicamente,   lo que será comunicado al abonado el mes anterior al cambio de tarifa para su aceptación. Para la baja del servicio se debe hacer con 30 días de anticipación comunicando a la empresa dicha decisión.</p>
+                        </div>
+                      </div><br>
+                    
+                </div>
+            </form>
+        </div>                   
+    </section>
+    <footer class="footer">
+      <p>Todos los Derechos Reservados 2021 | Inter Red | <a href="#"></a> Made in ~ Code Eight2</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script></script>   
+<script src="../js/menu.js"></script>
+    <script src="../js/lightbox.js"></script>
+    <script src="https://kit.fontawesome.com/49644a980d.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
+    
+</body>
+</html>
+
+
+
+

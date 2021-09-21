@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Declaracion de variables*/
+$colorPrincipal:#fff;
+$colorAlternativo:#e0dcdc;
+$zona1:choya;
+$zona2:villalapunta;
+$zona3:soldemayo;
+$zona4:frias;
+
+/*Fin declaracion de variables*/
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(199, 185, 218, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(../images/principal.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color:$colorPrincipal;
+}
+
+.hamburguer{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background:$colorPrincipal;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+
+
+// .menu-navegacion{
+//     position: fixed;
+//     top: 0;
+//     width: 30vw;
+//     height: 100%;
+//     /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%); */
+//     background-image: linear-gradient(to top, #131bec 0%, #4058e6 100%);
+//     background-image: linear-gradient(135deg, #667eea 0%, #1b2cac 100%);
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-evenly;
+//     align-items: center;
+//     right: 0;
+//     transform: translateX(110%);
+//     transition:transform 0.3s ease-in-out;
+//     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+
+//     a{
+//         color: $colorPrincipal;
+//         text-decoration: none;
+//     }
+// }
+
+.spread{
+    transform: translateX(0);
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+
+.titulo__h1--tamaño{
+    font-size: 80px;
+}
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+.spitch__h3--color{
+    color: blue;
+}
+
+/* Services */
+
+.subtitulo{
+    color: #0915b9;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.subtitulo__h2--color{
+    color: black;
+    font-size: 35px;
+    font-weight: 250;
+}
+$zona1 : $zona3;
+.images{
+    @if $zona1==choya {
+        color: #0915b9;
+ 
+    }@else if $zona2==villalapunta{
+        color: green;
+     
+    }@else if $zona3 ==soldemayo{
+        color: #764ba2;
+
+    }@else if $zona4==frias{
+        color: green;
+ 
+    }
+}
+
+.zona__h2--color{
+    color: brown;
+}
+.frecuentes__h2--color{
+    color: chartreuse;
+}
+.contrato__h3--color{
+    color: cornflowerblue;
+}
+.velocidad__h3--tamaño{
+    font-size: 35px;
+}
+.permanencia__h3--color{
+    color: crimson;
+}
+.baja__h3--color{
+    color: red;
+}
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    img{
+        width: 40%;
+    }
+}
+
+
+.checklist-servicio{
+    width: 45%;
+}
+
+.service{
+    margin-bottom: 20px;
+    
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: #092992;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(to top, #1910ce 0%, #2738b4 100%);
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    color:  $colorPrincipal;
+    font-weight: 700;
+}
+
+.gallery{
+    background: #f2f2f2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.img-galeria{
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.534);
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.agregar-imagen{
+    width: 60%;
+    transform: scale(0);
+    border-radius: 10px;
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.show{
+    transform: translate(0);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+/*carrusel*/
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+.experts{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*planes*/
+.planes{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#megas{
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+.valorplan{
+    font-size: 40px;
+    font-weight: bold;
+}
+.action_plan{
+    border-radius: 10px;
+    font-size: 18px;
+}
+.action_plan:hover{
+    border-radius: 15px;
+    font-size: 22px;
+}
+.mini{
+    font-size: 10px;
+    text-align: center;
+}
+.finalesx{
+    text-align: center;
+}
+/*01*/
+.cont-frecuente{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+
+    img{
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+}
+/*02 planes*/
+.cont-plan{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+
+    img{
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+}
+
+/*f02*/
+ul li{
+    list-style-type: none;
+    
+}
+
+.n-expert{
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+footer{
+    background: #365ddd;
+    padding-bottom: 0.1px;
+}
+.form{
+    color:black;
+    font-size: 20px;
+}
+.form-contact{
+    text-align: center;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+
+.contact-us{
+    width: 40%;
+    color:  $colorPrincipal;
+}
+.contact{
+    text-align: center;
+    width: 90%;
+    color: $colorPrincipal;
+}
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+
+    +p{
+        font-weight: 500;
+    }
+}
+
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+$colorSMI: $colorPrincipal;
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid $colorPrincipal;
+    border-radius: 50%;
+    text-align: center;
+    color: black;
+    color:$colorSMI;
+
+    i{
+        font-size: 30px;
+        line-height: 60px;
+    }
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: $colorPrincipal;
+    margin-bottom: 60px;
+}
+
+.social-media-icon:hover{
+    background: $colorPrincipal;
+    color:#764ba2;
+}
+/*responsive*/
+@media screen and (max-width: 800px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+
+    .titulo{
+        font-size: 40px;
+    }
+
+    .contenedor-servicio img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    
+    .checklist-servicio{
+        width: 80%;
+    }
+
+    .service{
+        margin-bottom: 30px;
+    }
+
+    .img-galeria{
+        width: 45%;
+    }
+    
+    .agregarImagen{
+        width: 80%;
+    }
+
+    
+    .cont-frecuente{
+        width: 80%;
+    }
+    .cont-plan{
+        width: 80%;
+    }
+    
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .menu-navegacion{
+        width: 65vw;
+    }
+
+    .hamburguer{
+        top: 20px;
+        right: 20px;
+    }
+
+    .titulo{
+        font-size: 30px;
+    }
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .img-galeria{
+        width: 95%;
+    }
+    
+    .agregar-imagen{
+        width: 90%;
+    }
+
+    .social-media{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 95%;
+        margin-bottom: 40px;
+    }
+    
+}

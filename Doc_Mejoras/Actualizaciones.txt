@@ -1,0 +1,10 @@
+1-Mejoras de los iconos, con el uso de BoxIcon
+2-Mejoras en los colores, con la implementacion de css
+3-Mejoras en el menu de navegacion, con la implementacion de js
+4-Implementacion en el formulario de contacto con boostrap
+5-Mejoras con el uso de grid
+6-implementaciones de animaciones en el menu
+7-implementacion de sass
+8-Mejoras en responsive con el uso de boostrap
+9-mejor navegabilidad en los menues
+10-implementacion de call to action de whatsap
